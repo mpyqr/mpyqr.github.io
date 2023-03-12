@@ -7,6 +7,7 @@
 		get: (searchParams, prop) => searchParams.get(prop),
 	});
 	let u = params.u || "https://netopia-payments.com";
+	console.log("Rendering1",u);
 	new QRCode(document.getElementById("qrcode"),u);
 </script>
 
@@ -14,6 +15,7 @@
 <div id="qrcode-2"></div>
 <script type="text/javascript">
 	let u2 = params.u2 || "https://mobilpay.com";
+	console.log("Rendering2",u2);
 	let qrcode = new QRCode(document.getElementById("qrcode-2"), {
 		text: u2,
 		width: 128,
