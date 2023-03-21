@@ -1,7 +1,7 @@
 
 <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
 
-<div id="qrcode"></div>
+<div id="qrcode" style="text-align: center; display: inline-block; vertical-align: middle;"></div>
 <script type="text/javascript">
 	const params = new Proxy(new URLSearchParams(window.location.search), {
 		get: (searchParams, prop) => searchParams.get(prop),
